@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootsrap dahil etme</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!--
+        col-sm/ms/lg dersek pixele durumuna göre tek satır kaplayabilirken
+        col-3 gibi manuel böldüğümüzde her zaman toplam pixelin 3/12 sini kaplar
+        col-sm-4, col-md-6 gibi direkt px'e göre oranda verilbilir
+
+        align-items-start başa
+        align-itmes-center ortaya
+        align-items-end sona, girdde hizalar
+
+        
+    -->
+    <div class="container">
+        <div class="row bg-warning align-items-start text-center mt-3" style="height: 100px;">
+            <div class="col-sm bg-primary text-light">
+                one of three columns
+            </div>
+            <div class="col-sm bg-danger text-light">
+                one of three columns
+            </div>
+            <div class="col-sm bg-success text-light">
+                one of three columns
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!--
+        align-self-start başa
+        align-self-center ortaya
+        align-self-end sona, sadece bir sütünun konumu ayarlanır 
+        -->
+    <div class="container">
+        <div class="row bg-warning text-center" style="height: 100px; m-3">
+            <div class="col-sm bg-primary text-light align-self-start">
+                one of three columns
+            </div>
+            <div class="col-sm bg-danger text-light align-self-center">
+                one of three columns
+            </div>
+            <div class="col-sm bg-success text-light align-self-end">
+                one of three columns
+            </div>
+        </div>
+    </div>
+
+    <!--
+            justify-content-start sola hizalar
+            justify-content-center ortaya hizalar
+            justify-content-end sağa 
+            justify-content-around eşit aralıklarla dağıtır
+            justify-content-between eşit aralıklarla uçlardan hizalar
+            
+
+        -->
+    <div class="container">
+        <div class="row bg-warning justify-content-center align-items-center m-4" style="height: 100px;">
+            <div class="col-3 bg-primary text-light">
+                one of three columns
+            </div>
+            <div class="col-3 bg-danger text-light">
+                one of three columns
+            </div>
+            <div class="col-3 bg-success text-light">
+                one of three columns
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="bg-primary mt-2 px-2">Div 1</div>
+        <div class="bg-danger my-2 px-2">Div 2</div>
+        <div class="bg-success my-2 px-2">Div 3</div>
+        <div class="bg-info my-2 px-2">Div 4</div>
+        <div class="bg-secondary mb-2 px-2">Div 5</div>
+    </div>
+
+    <div class="alert alert-primary mt-3" role="alert">
+        Örnek uyarı message'ı 1
+    </div>
+    <div class="alert alert-secondary" role="alert">
+        Örnek uyarı message'ı 2
+    </div>
+    <div class="alert alert-success" role="alert">
+        Örnek uyarı message'ı 3
+    </div>
+    <div class="alert alert-danger" role="alert">
+        Örnek uyarı message'ı 4
+    </div>
+    <div class="alert alert-info" role="alert">
+        Örnek uyarı message'ı 5
+    </div>
+    <div class="alert alert-warning" role="alert">
+        Örnek uyarı message'ı 6
+    </div>
+    <div class="alert alert-dark mb-2" role="alert">
+        Örnek uyarı message'ı 7
+    </div>
+
+    <div class="container">
+        <div class="alert alert-info text-center m-4 text-capitalize font-weight-bold " role="alert">
+            Başarılı bir şekilde giriş yaptınız.
+            <a href="" class="text-decoration-none text-info ">Anasayfa için tıklayınız.</a>
+        </div>
+    </div>
+
+    <div class="container p-4">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary btn-sm" disabled>Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark btn-block">Dark</button>
+        <hr>
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+        <button type="button" class="btn btn-outline-success">Success</button>
+        <button type="button" class="btn btn-outline-danger">Danger</button>
+        <button type="button" class="btn btn-outline-warning">Warning</button>
+        <button type="button" class="btn btn-outline-info">Info</button>
+        <button type="button" class="btn btn-outline-light">Light</button>
+        <button type="button" class="btn btn-outline-dark">Dark</button>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
